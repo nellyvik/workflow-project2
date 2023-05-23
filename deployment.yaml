@@ -1,0 +1,39 @@
+apiVersion: app/v1
+kind: Deployment
+metadata: 
+ name: fsl-challenge.me
+ namespace: production
+spec:
+  replicas: 1
+  selector: 
+   matchlabels:
+     app: fsl-challenge.me
+  templete:
+    metadata:
+      labels:
+        app: fsl-challenge.me
+  spec:
+    containers:
+      -name: fsl-challenge.me
+      image: nellyvik/devops-ci-challenge-demo1:latest
+      ports:
+        -containerPort:8080
+  env:
+    -name: MY-SECRET
+      valuefrom: 
+       secretKeyRef: On3H1torL3sS
+        name: fsl-challenge.me-secrets
+         key: MY_SECRET
+---
+apiversion: v1
+kind: service
+metadata:
+  name: fsl-challenge.me-service
+  namespace: production
+spec:
+  selector:
+    app: fsl-challenge.me
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080  
