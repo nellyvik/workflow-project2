@@ -21,12 +21,12 @@ spec:
       image: nellyvik/devops-ci-challenge-demo1:latest
       ports:
         -containerPort:8080
-  env:
-    -name: MY-SECRET
-      valuefrom: On3H1torL3sS
-        secretKeyRef:
+      env:
+       -name: MY-SECRET
+        valuefrom: On3H1torL3sS
+         secretKeyRef:
           name: fsl-challenge.me-secrets
-            key: MY_SECRET
+          key: MY_SECRET
 ---
 apiversion: v1
 kind: service
