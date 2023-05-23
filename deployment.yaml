@@ -8,22 +8,25 @@ spec:
   selector: 
    matchlabels:
      app: fsl-challenge.me
+  
   templete:
     metadata:
       labels:
         app: fsl-challenge.me
+    
   spec:
     containers:
       -name: fsl-challenge.me
+  
       image: nellyvik/devops-ci-challenge-demo1:latest
       ports:
         -containerPort:8080
   env:
     -name: MY-SECRET
-      valuefrom: 
-       secretKeyRef: On3H1torL3sS
-        name: fsl-challenge.me-secrets
-         key: MY_SECRET
+      valuefrom: On3H1torL3sS
+        secretKeyRef:
+          name: fsl-challenge.me-secrets
+            key: MY_SECRET
 ---
 apiversion: v1
 kind: service
@@ -33,6 +36,7 @@ metadata:
 spec:
   selector:
     app: fsl-challenge.me
+
   ports:
     - protocol: TCP
       port: 8080
