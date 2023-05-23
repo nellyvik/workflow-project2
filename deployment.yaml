@@ -14,16 +14,15 @@ spec:
       labels:
         app: fsl-challenge.me
     
-  spec:
-    containers:
-      -name: fsl-challenge.me
-  
-      image: nellyvik/devops-ci-challenge-demo1:latest
-      ports:
-        -containerPort:8080
-      env:
-       -name: MY-SECRET
-        MY_SECRET: On3H1torL3sS
+    spec:
+      containers:
+      - name: fsl-challenge.me
+        image: nellyvik/devops-ci-challenge-demo1:latest
+        ports:
+        - containerPort:8080
+        env:
+        - name: MY-SECRET
+          MY_SECRET: On3H1torL3sS
          secretKeyRef:
           name: fsl-challenge.me-secrets
           key: MY_SECRET
