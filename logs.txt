@@ -1,0 +1,1195 @@
+
+==> Audit <==
+|-----------|--------------------------------|----------|-----------------------|---------|---------------------|---------------------|
+|  Command  |              Args              | Profile  |         User          | Version |     Start Time      |      End Time       |
+|-----------|--------------------------------|----------|-----------------------|---------|---------------------|---------------------|
+| kubectl   | -- get pods -A                 | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 22:07 CDT | 20 May 23 22:07 CDT |
+| kubectl   | -- get nodes                   | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 22:07 CDT | 20 May 23 22:07 CDT |
+| kubectl   | apply application.yaml         | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 22:08 CDT |                     |
+| kubectl   | -- --help                      | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 22:09 CDT | 20 May 23 22:09 CDT |
+| kubectl   | get logs                       | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 22:11 CDT |                     |
+| start     |                                | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 22:17 CDT |                     |
+| start     |                                | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 22:37 CDT |                     |
+| dashboard |                                | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 22:48 CDT |                     |
+| kubectl   | get pods                       | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 22:51 CDT |                     |
+| start     |                                | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 22:51 CDT |                     |
+| kubectl   | get node                       | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 23:17 CDT |                     |
+| kubectl   | get node                       | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 23:20 CDT |                     |
+| kubectl   | config use-context minikube    | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 23:24 CDT | 20 May 23 23:24 CDT |
+| kubectl   | get node                       | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 23:25 CDT |                     |
+| kubectl   | get node                       | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 23:27 CDT |                     |
+| start     |                                | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 23:30 CDT | 20 May 23 23:34 CDT |
+| kubectl   | -- get pods -A                 | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 23:36 CDT | 20 May 23 23:36 CDT |
+| kubectl   | get node                       | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 23:36 CDT | 20 May 23 23:36 CDT |
+| kubectl   | apply application.yaml         | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 23:37 CDT |                     |
+| kubectl   | -- get pods --namespace        | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 23:40 CDT | 20 May 23 23:40 CDT |
+|           | kube-system                    |          |                       |         |                     |                     |
+| kubectl   | -- apply --help                | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 23:41 CDT | 20 May 23 23:41 CDT |
+| kubectl   | -- --help                      | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 23:43 CDT | 20 May 23 23:43 CDT |
+| kubectl   | apply application.yaml         | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 23:45 CDT |                     |
+| kubectl   | -- get pods --namespace        | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 20 May 23 23:46 CDT | 20 May 23 23:46 CDT |
+|           | kube-system                    |          |                       |         |                     |                     |
+| kubectl   | -- get pods --namespace        | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 06:13 CDT | 21 May 23 06:13 CDT |
+|           | kube-system                    |          |                       |         |                     |                     |
+| kubectl   | get nodes                      | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 06:22 CDT | 21 May 23 06:22 CDT |
+| kubectl   | get pod                        | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 06:25 CDT | 21 May 23 06:25 CDT |
+| kubectl   | -- get pods                    | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 06:28 CDT | 21 May 23 06:28 CDT |
+| kubectl   | -- get pods --namespace        | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 06:29 CDT | 21 May 23 06:29 CDT |
+|           | kube-system                    |          |                       |         |                     |                     |
+| kubectl   | -- get pods                    | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 06:30 CDT |                     |
+|           | kube-apiserver-minikube        |          |                       |         |                     |                     |
+| kubectl   | get pod                        | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 06:30 CDT | 21 May 23 06:30 CDT |
+| kubectl   | get pods                       | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 06:31 CDT | 21 May 23 06:31 CDT |
+| kubectl   | describe pods                  | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 06:32 CDT | 21 May 23 06:32 CDT |
+| kubectl   | -- apply pods --namespace      | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 06:33 CDT |                     |
+|           | kube-system                    |          |                       |         |                     |                     |
+| kubectl   | -- apply                       | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 06:33 CDT |                     |
+| kubectl   | config use-context minikube    | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 06:50 CDT | 21 May 23 06:50 CDT |
+| stop      |                                | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 06:51 CDT | 21 May 23 06:51 CDT |
+| start     |                                | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 06:51 CDT | 21 May 23 06:53 CDT |
+| kubectl   | get nodes                      | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 06:54 CDT | 21 May 23 06:54 CDT |
+| kubectl   | describe node minikube         | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 06:55 CDT | 21 May 23 06:55 CDT |
+| kubectl   | get pod                        | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 06:59 CDT | 21 May 23 06:59 CDT |
+| kubectl   | create secret generic          | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 07:09 CDT |                     |
+|           | application-secrets production |          |                       |         |                     |                     |
+| kubectl   | [flags] [options]              | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 07:11 CDT |                     |
+| kubectl   | create secret generic          | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 07:14 CDT |                     |
+|           | application-secrets production |          |                       |         |                     |                     |
+| kubectl   | get pod                        | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 07:18 CDT | 21 May 23 07:18 CDT |
+| kubectl   | get deployment                 | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 07:19 CDT | 21 May 23 07:19 CDT |
+| kubectl   | apply application.yaml         | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 07:24 CDT |                     |
+| kubectl   | get deployment                 | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 11:26 CDT | 21 May 23 11:26 CDT |
+| kubectl   | get pod                        | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 11:26 CDT | 21 May 23 11:26 CDT |
+| kubectl   | get nodes                      | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 11:27 CDT | 21 May 23 11:27 CDT |
+| kubectl   | describe nodes                 | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 11:27 CDT | 21 May 23 11:27 CDT |
+| kubectl   | config use--context minikube   | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 11:30 CDT |                     |
+| kubectl   | config use-context minikube    | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 11:30 CDT | 21 May 23 11:30 CDT |
+| kubectl   | -- get pods --namespace        | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 21 May 23 11:32 CDT | 21 May 23 11:32 CDT |
+|           | kube-system                    |          |                       |         |                     |                     |
+| kubectl   | get nodes                      | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 22 May 23 17:22 CDT |                     |
+| kubectl   | get nodes                      | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 22 May 23 18:36 CDT |                     |
+| start     |                                | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 22 May 23 18:39 CDT |                     |
+| kubectl   | get nodes                      | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 22 May 23 18:44 CDT |                     |
+| ip        |                                | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 22 May 23 18:47 CDT |                     |
+| start     |                                | minikube | LAPTOP-O96MVD10\nelly | v1.30.1 | 22 May 23 18:48 CDT |                     |
+|-----------|--------------------------------|----------|-----------------------|---------|---------------------|---------------------|
+
+
+==> Last Start <==
+Log file created at: 2023/05/22 18:48:17
+Running on machine: LAPTOP-O96MVD10
+Binary: Built with gc go1.20.2 for windows/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0522 18:48:17.860327   20544 out.go:296] Setting OutFile to fd 96 ...
+I0522 18:48:17.860327   20544 out.go:309] Setting ErrFile to fd 100...
+W0522 18:48:17.886923   20544 root.go:312] Error reading config file at C:\Users\nelly\.minikube\config\config.json: open C:\Users\nelly\.minikube\config\config.json: The system cannot find the file specified.
+I0522 18:48:17.894824   20544 out.go:303] Setting JSON to false
+I0522 18:48:17.909465   20544 start.go:125] hostinfo: {"hostname":"LAPTOP-O96MVD10","uptime":109409,"bootTime":1684689888,"procs":344,"os":"windows","platform":"Microsoft Windows 11 Home","platformFamily":"Standalone Workstation","platformVersion":"10.0.22621.1702 Build 22621.1702","kernelVersion":"10.0.22621.1702 Build 22621.1702","kernelArch":"x86_64","virtualizationSystem":"","virtualizationRole":"","hostId":"be07e7e7-db7d-4beb-84c2-a7a23bc7b2b2"}
+W0522 18:48:17.909465   20544 start.go:133] gopshost.Virtualization returned error: not implemented yet
+I0522 18:48:17.911037   20544 out.go:177] 😄  minikube v1.30.1 on Microsoft Windows 11 Home 10.0.22621.1702 Build 22621.1702
+I0522 18:48:17.913181   20544 notify.go:220] Checking for updates...
+I0522 18:48:17.914272   20544 config.go:182] Loaded profile config "minikube": Driver=virtualbox, ContainerRuntime=docker, KubernetesVersion=v1.26.3
+I0522 18:48:17.914272   20544 driver.go:375] Setting default libvirt URI to qemu:///system
+I0522 18:48:17.971821   20544 virtualbox.go:136] virtual box version: 6.1.36r152435
+I0522 18:48:17.973409   20544 out.go:177] ✨  Using the virtualbox driver based on existing profile
+I0522 18:48:17.974995   20544 start.go:295] selected driver: virtualbox
+I0522 18:48:17.974995   20544 start.go:870] validating driver "virtualbox" against &{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.30.1-amd64.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.39@sha256:bf2d9f1e9d837d8deea073611d2605405b6be904647d97ebd9b12045ddfe1106 Memory:2500 CPUs:2 DiskSize:20000 VMDriver: Driver:virtualbox HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:0 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.26.3 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[{Name: IP:192.168.59.100 Port:8443 KubernetesVersion:v1.26.3 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[default-storageclass:true storage-provisioner:true] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\nelly:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP:}
+I0522 18:48:17.975519   20544 start.go:881] status for virtualbox: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:6.1.36r152435
+}
+I0522 18:48:18.022690   20544 cni.go:84] Creating CNI manager for ""
+I0522 18:48:18.022690   20544 cni.go:157] "virtualbox" driver + "docker" container runtime found on kubernetes v1.24+, recommending bridge
+I0522 18:48:18.022690   20544 start_flags.go:319] config:
+{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.30.1-amd64.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.39@sha256:bf2d9f1e9d837d8deea073611d2605405b6be904647d97ebd9b12045ddfe1106 Memory:2500 CPUs:2 DiskSize:20000 VMDriver: Driver:virtualbox HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:0 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.26.3 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[{Name: IP:192.168.59.100 Port:8443 KubernetesVersion:v1.26.3 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[default-storageclass:true storage-provisioner:true] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\nelly:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP:}
+I0522 18:48:18.023233   20544 iso.go:125] acquiring lock: {Name:mk0b601a7fee7d34f3c55fa1f2bfd4277cee6b28 Clock:{} Delay:500ms Timeout:10m0s Cancel:<nil>}
+I0522 18:48:18.029092   20544 out.go:177] 👍  Starting control plane node minikube in cluster minikube
+I0522 18:48:18.031407   20544 preload.go:132] Checking if preload exists for k8s version v1.26.3 and runtime docker
+I0522 18:48:18.031407   20544 preload.go:148] Found local preload: C:\Users\nelly\.minikube\cache\preloaded-tarball\preloaded-images-k8s-v18-v1.26.3-docker-overlay2-amd64.tar.lz4
+I0522 18:48:18.031407   20544 cache.go:57] Caching tarball of preloaded images
+I0522 18:48:18.031407   20544 preload.go:174] Found C:\Users\nelly\.minikube\cache\preloaded-tarball\preloaded-images-k8s-v18-v1.26.3-docker-overlay2-amd64.tar.lz4 in cache, skipping download
+I0522 18:48:18.032023   20544 cache.go:60] Finished verifying existence of preloaded tar for  v1.26.3 on docker
+I0522 18:48:18.032023   20544 profile.go:148] Saving config to C:\Users\nelly\.minikube\profiles\minikube\config.json ...
+I0522 18:48:18.033807   20544 cache.go:193] Successfully downloaded all kic artifacts
+I0522 18:48:18.033807   20544 start.go:364] acquiring machines lock for minikube: {Name:mkb8c5346b4db3a0726b7d57f52400bf6d79af31 Clock:{} Delay:500ms Timeout:13m0s Cancel:<nil>}
+I0522 18:48:18.033807   20544 start.go:368] acquired machines lock for "minikube" in 0s
+I0522 18:48:18.034385   20544 start.go:96] Skipping create...Using existing machine configuration
+I0522 18:48:18.034385   20544 fix.go:55] fixHost starting: 
+I0522 18:48:18.034954   20544 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0522 18:48:18.628783   20544 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x (64-bit)"
+UUID="b1d896e5-f65c-41f8-a824-15e2b7a11768"
+CfgFile="C:\\Users\\nelly\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\nelly\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\nelly\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="b1d896e5-f65c-41f8-a824-15e2b7a11768"
+memory=2500
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="aborted"
+VMStateChangeTime="2023-05-21T17:24:26.000000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\Users\nelly\.minikube\machines\minikube\boot2docker.iso"
+"SATA-ImageUUID-0-0"="6f0e8cf8-770f-4c82-a160-3b6d6c6141ca"
+"SATA-tempeject"="off"
+"SATA-IsEjected"="off"
+"SATA-hot-pluggable"="off"
+"SATA-nonrotational"="off"
+"SATA-discard"="off"
+"SATA-1-0"="C:\Users\nelly\.minikube\machines\minikube\disk.vmdk"
+"SATA-ImageUUID-1-0"="007739d4-44ee-476e-9b8e-ba4a653b0bd1"
+"SATA-hot-pluggable"="off"
+"SATA-nonrotational"="off"
+"SATA-discard"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027291299"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,50478,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #3"
+macaddress2="08002730F988"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="dsound"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="off"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\nelly\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+}
+I0522 18:48:18.629302   20544 main.go:141] libmachine: STDERR:
+{
+}
+I0522 18:48:18.629446   20544 fix.go:103] recreateIfNeeded on minikube: state=Stopped err=<nil>
+W0522 18:48:18.629446   20544 fix.go:129] unexpected machine state, will restart: <nil>
+I0522 18:48:18.631830   20544 out.go:177] 🔄  Restarting existing virtualbox VM for "minikube" ...
+I0522 18:48:18.632879   20544 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0522 18:48:18.753234   20544 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x (64-bit)"
+UUID="b1d896e5-f65c-41f8-a824-15e2b7a11768"
+CfgFile="C:\\Users\\nelly\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\nelly\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\nelly\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="b1d896e5-f65c-41f8-a824-15e2b7a11768"
+memory=2500
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="aborted"
+VMStateChangeTime="2023-05-21T17:24:26.000000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\Users\nelly\.minikube\machines\minikube\boot2docker.iso"
+"SATA-ImageUUID-0-0"="6f0e8cf8-770f-4c82-a160-3b6d6c6141ca"
+"SATA-tempeject"="off"
+"SATA-IsEjected"="off"
+"SATA-hot-pluggable"="off"
+"SATA-nonrotational"="off"
+"SATA-discard"="off"
+"SATA-1-0"="C:\Users\nelly\.minikube\machines\minikube\disk.vmdk"
+"SATA-ImageUUID-1-0"="007739d4-44ee-476e-9b8e-ba4a653b0bd1"
+"SATA-hot-pluggable"="off"
+"SATA-nonrotational"="off"
+"SATA-discard"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027291299"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,50478,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #3"
+macaddress2="08002730F988"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="dsound"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="off"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\nelly\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+}
+I0522 18:48:18.753234   20544 main.go:141] libmachine: STDERR:
+{
+}
+I0522 18:48:18.753749   20544 main.go:141] libmachine: Check network to re-create if needed...
+I0522 18:48:18.753845   20544 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe list hostonlyifs
+I0522 18:48:18.894824   20544 main.go:141] libmachine: STDOUT:
+{
+Name:            VirtualBox Host-Only Ethernet Adapter #3
+GUID:            7bd197f1-aa1c-4a59-834f-0ab25d27972c
+DHCP:            Disabled
+IPAddress:       192.168.59.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::2b00:7c8d:c52a:dbce
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:0c
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #3
+
+Name:            VirtualBox Host-Only Ethernet Adapter
+GUID:            d5ce00d5-1ceb-4e50-9f9e-a0be33c4fc5a
+DHCP:            Disabled
+IPAddress:       192.168.56.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::65cc:f6db:3b24:a8be
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:16
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter
+
+Name:            VirtualBox Host-Only Ethernet Adapter #2
+GUID:            dc19b83e-7289-4c0c-be2b-6eb60e87c0ae
+DHCP:            Disabled
+IPAddress:       192.168.33.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::31be:b477:8bf2:ea3b
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:17
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #2
+
+}
+I0522 18:48:18.894824   20544 main.go:141] libmachine: STDERR:
+{
+}
+I0522 18:48:19.014293   20544 main.go:141] libmachine: Searching for hostonly interface for IPv4: 192.168.59.1 and Mask: ffffff00
+I0522 18:48:19.014293   20544 main.go:141] libmachine: Found: VirtualBox Host-Only Ethernet Adapter #3
+I0522 18:48:19.014293   20544 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe list dhcpservers
+I0522 18:48:19.096439   20544 main.go:141] libmachine: STDOUT:
+{
+NetworkName:    HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter
+Dhcpd IP:       192.168.56.100
+LowerIPAddress: 192.168.56.101
+UpperIPAddress: 192.168.56.254
+NetworkMask:    255.255.255.0
+Enabled:        Yes
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+Groups:               None
+Individual Configs:   None
+
+NetworkName:    HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #3
+Dhcpd IP:       192.168.59.12
+LowerIPAddress: 192.168.59.100
+UpperIPAddress: 192.168.59.254
+NetworkMask:    255.255.255.0
+Enabled:        Yes
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+Groups:               None
+Individual Configs:   None
+}
+I0522 18:48:19.096439   20544 main.go:141] libmachine: STDERR:
+{
+}
+I0522 18:48:19.096439   20544 main.go:141] libmachine: Removing orphan DHCP servers...
+I0522 18:48:19.096439   20544 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe list hostonlyifs
+I0522 18:48:19.237394   20544 main.go:141] libmachine: STDOUT:
+{
+Name:            VirtualBox Host-Only Ethernet Adapter #3
+GUID:            7bd197f1-aa1c-4a59-834f-0ab25d27972c
+DHCP:            Disabled
+IPAddress:       192.168.59.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::2b00:7c8d:c52a:dbce
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:0c
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #3
+
+Name:            VirtualBox Host-Only Ethernet Adapter
+GUID:            d5ce00d5-1ceb-4e50-9f9e-a0be33c4fc5a
+DHCP:            Disabled
+IPAddress:       192.168.56.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::65cc:f6db:3b24:a8be
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:16
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter
+
+Name:            VirtualBox Host-Only Ethernet Adapter #2
+GUID:            dc19b83e-7289-4c0c-be2b-6eb60e87c0ae
+DHCP:            Disabled
+IPAddress:       192.168.33.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::31be:b477:8bf2:ea3b
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:17
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #2
+
+}
+I0522 18:48:19.237394   20544 main.go:141] libmachine: STDERR:
+{
+}
+I0522 18:48:19.237394   20544 main.go:141] libmachine: Adding/Modifying DHCP server "192.168.59.11" with address range "192.168.59.100" - "192.168.59.254"...
+I0522 18:48:19.237394   20544 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe list dhcpservers
+I0522 18:48:19.331104   20544 main.go:141] libmachine: STDOUT:
+{
+NetworkName:    HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter
+Dhcpd IP:       192.168.56.100
+LowerIPAddress: 192.168.56.101
+UpperIPAddress: 192.168.56.254
+NetworkMask:    255.255.255.0
+Enabled:        Yes
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+Groups:               None
+Individual Configs:   None
+
+NetworkName:    HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #3
+Dhcpd IP:       192.168.59.12
+LowerIPAddress: 192.168.59.100
+UpperIPAddress: 192.168.59.254
+NetworkMask:    255.255.255.0
+Enabled:        Yes
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+Groups:               None
+Individual Configs:   None
+}
+I0522 18:48:19.331104   20544 main.go:141] libmachine: STDERR:
+{
+}
+I0522 18:48:19.331104   20544 main.go:141] libmachine: Windows might ask for the permission to configure a dhcp server. Sometimes, such confirmation window is minimized in the taskbar.
+I0522 18:48:19.331104   20544 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe dhcpserver modify --netname HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #3 --ip 192.168.59.11 --netmask 255.255.255.0 --lowerip 192.168.59.100 --upperip 192.168.59.254 --enable
+I0522 18:48:19.424898   20544 main.go:141] libmachine: STDOUT:
+{
+}
+I0522 18:48:19.424898   20544 main.go:141] libmachine: STDERR:
+{
+}
+I0522 18:48:19.424898   20544 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe modifyvm minikube --nic2 hostonly --nictype2 virtio --nicpromisc2 deny --hostonlyadapter2 VirtualBox Host-Only Ethernet Adapter #3 --cableconnected2 on
+I0522 18:48:19.504187   20544 main.go:141] libmachine: STDOUT:
+{
+}
+I0522 18:48:19.504187   20544 main.go:141] libmachine: STDERR:
+{
+}
+I0522 18:48:19.504187   20544 fix.go:57] fixHost completed within 1.4698012s
+I0522 18:48:19.504187   20544 start.go:83] releasing machines lock for "minikube", held for 1.4703798s
+W0522 18:48:19.504187   20544 start.go:687] error starting host: driver start: listen tcp4 127.0.0.1:50478: bind: An attempt was made to access a socket in a way forbidden by its access permissions.
+W0522 18:48:19.504728   20544 out.go:239] 🤦  StartHost failed, but will try again: driver start: listen tcp4 127.0.0.1:50478: bind: An attempt was made to access a socket in a way forbidden by its access permissions.
+I0522 18:48:19.504728   20544 start.go:702] Will try again in 5 seconds ...
+I0522 18:48:24.508356   20544 start.go:364] acquiring machines lock for minikube: {Name:mkb8c5346b4db3a0726b7d57f52400bf6d79af31 Clock:{} Delay:500ms Timeout:13m0s Cancel:<nil>}
+I0522 18:48:24.508356   20544 start.go:368] acquired machines lock for "minikube" in 0s
+I0522 18:48:24.508356   20544 start.go:96] Skipping create...Using existing machine configuration
+I0522 18:48:24.508866   20544 fix.go:55] fixHost starting: 
+I0522 18:48:24.508866   20544 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0522 18:48:24.904686   20544 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x (64-bit)"
+UUID="b1d896e5-f65c-41f8-a824-15e2b7a11768"
+CfgFile="C:\\Users\\nelly\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\nelly\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\nelly\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="b1d896e5-f65c-41f8-a824-15e2b7a11768"
+memory=2500
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="aborted"
+VMStateChangeTime="2023-05-21T17:24:26.000000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\Users\nelly\.minikube\machines\minikube\boot2docker.iso"
+"SATA-ImageUUID-0-0"="6f0e8cf8-770f-4c82-a160-3b6d6c6141ca"
+"SATA-tempeject"="off"
+"SATA-IsEjected"="off"
+"SATA-hot-pluggable"="off"
+"SATA-nonrotational"="off"
+"SATA-discard"="off"
+"SATA-1-0"="C:\Users\nelly\.minikube\machines\minikube\disk.vmdk"
+"SATA-ImageUUID-1-0"="007739d4-44ee-476e-9b8e-ba4a653b0bd1"
+"SATA-hot-pluggable"="off"
+"SATA-nonrotational"="off"
+"SATA-discard"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027291299"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,50478,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #3"
+macaddress2="08002730F988"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="dsound"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="off"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\nelly\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+}
+I0522 18:48:24.904686   20544 main.go:141] libmachine: STDERR:
+{
+}
+I0522 18:48:24.904686   20544 fix.go:103] recreateIfNeeded on minikube: state=Stopped err=<nil>
+W0522 18:48:24.904686   20544 fix.go:129] unexpected machine state, will restart: <nil>
+I0522 18:48:24.906923   20544 out.go:177] 🔄  Restarting existing virtualbox VM for "minikube" ...
+I0522 18:48:24.908521   20544 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0522 18:48:25.029759   20544 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x (64-bit)"
+UUID="b1d896e5-f65c-41f8-a824-15e2b7a11768"
+CfgFile="C:\\Users\\nelly\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\nelly\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\nelly\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="b1d896e5-f65c-41f8-a824-15e2b7a11768"
+memory=2500
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="aborted"
+VMStateChangeTime="2023-05-21T17:24:26.000000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\Users\nelly\.minikube\machines\minikube\boot2docker.iso"
+"SATA-ImageUUID-0-0"="6f0e8cf8-770f-4c82-a160-3b6d6c6141ca"
+"SATA-tempeject"="off"
+"SATA-IsEjected"="off"
+"SATA-hot-pluggable"="off"
+"SATA-nonrotational"="off"
+"SATA-discard"="off"
+"SATA-1-0"="C:\Users\nelly\.minikube\machines\minikube\disk.vmdk"
+"SATA-ImageUUID-1-0"="007739d4-44ee-476e-9b8e-ba4a653b0bd1"
+"SATA-hot-pluggable"="off"
+"SATA-nonrotational"="off"
+"SATA-discard"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027291299"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,50478,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #3"
+macaddress2="08002730F988"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="dsound"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="off"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\nelly\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+}
+I0522 18:48:25.029759   20544 main.go:141] libmachine: STDERR:
+{
+}
+I0522 18:48:25.029759   20544 main.go:141] libmachine: Check network to re-create if needed...
+I0522 18:48:25.029759   20544 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe list hostonlyifs
+I0522 18:48:25.170357   20544 main.go:141] libmachine: STDOUT:
+{
+Name:            VirtualBox Host-Only Ethernet Adapter #3
+GUID:            7bd197f1-aa1c-4a59-834f-0ab25d27972c
+DHCP:            Disabled
+IPAddress:       192.168.59.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::2b00:7c8d:c52a:dbce
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:0c
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #3
+
+Name:            VirtualBox Host-Only Ethernet Adapter
+GUID:            d5ce00d5-1ceb-4e50-9f9e-a0be33c4fc5a
+DHCP:            Disabled
+IPAddress:       192.168.56.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::65cc:f6db:3b24:a8be
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:16
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter
+
+Name:            VirtualBox Host-Only Ethernet Adapter #2
+GUID:            dc19b83e-7289-4c0c-be2b-6eb60e87c0ae
+DHCP:            Disabled
+IPAddress:       192.168.33.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::31be:b477:8bf2:ea3b
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:17
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #2
+
+}
+I0522 18:48:25.170357   20544 main.go:141] libmachine: STDERR:
+{
+}
+I0522 18:48:25.277177   20544 main.go:141] libmachine: Searching for hostonly interface for IPv4: 192.168.59.1 and Mask: ffffff00
+I0522 18:48:25.277325   20544 main.go:141] libmachine: Found: VirtualBox Host-Only Ethernet Adapter #3
+I0522 18:48:25.277325   20544 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe list dhcpservers
+I0522 18:48:25.371753   20544 main.go:141] libmachine: STDOUT:
+{
+NetworkName:    HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter
+Dhcpd IP:       192.168.56.100
+LowerIPAddress: 192.168.56.101
+UpperIPAddress: 192.168.56.254
+NetworkMask:    255.255.255.0
+Enabled:        Yes
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+Groups:               None
+Individual Configs:   None
+
+NetworkName:    HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #3
+Dhcpd IP:       192.168.59.11
+LowerIPAddress: 192.168.59.100
+UpperIPAddress: 192.168.59.254
+NetworkMask:    255.255.255.0
+Enabled:        Yes
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+Groups:               None
+Individual Configs:   None
+}
+I0522 18:48:25.371753   20544 main.go:141] libmachine: STDERR:
+{
+}
+I0522 18:48:25.371753   20544 main.go:141] libmachine: Removing orphan DHCP servers...
+I0522 18:48:25.371753   20544 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe list hostonlyifs
+I0522 18:48:25.497155   20544 main.go:141] libmachine: STDOUT:
+{
+Name:            VirtualBox Host-Only Ethernet Adapter #3
+GUID:            7bd197f1-aa1c-4a59-834f-0ab25d27972c
+DHCP:            Disabled
+IPAddress:       192.168.59.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::2b00:7c8d:c52a:dbce
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:0c
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #3
+
+Name:            VirtualBox Host-Only Ethernet Adapter
+GUID:            d5ce00d5-1ceb-4e50-9f9e-a0be33c4fc5a
+DHCP:            Disabled
+IPAddress:       192.168.56.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::65cc:f6db:3b24:a8be
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:16
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter
+
+Name:            VirtualBox Host-Only Ethernet Adapter #2
+GUID:            dc19b83e-7289-4c0c-be2b-6eb60e87c0ae
+DHCP:            Disabled
+IPAddress:       192.168.33.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::31be:b477:8bf2:ea3b
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:17
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #2
+
+}
+I0522 18:48:25.497155   20544 main.go:141] libmachine: STDERR:
+{
+}
+I0522 18:48:25.497155   20544 main.go:141] libmachine: Adding/Modifying DHCP server "192.168.59.7" with address range "192.168.59.100" - "192.168.59.254"...
+I0522 18:48:25.497155   20544 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe list dhcpservers
+I0522 18:48:25.576606   20544 main.go:141] libmachine: STDOUT:
+{
+NetworkName:    HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter
+Dhcpd IP:       192.168.56.100
+LowerIPAddress: 192.168.56.101
+UpperIPAddress: 192.168.56.254
+NetworkMask:    255.255.255.0
+Enabled:        Yes
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+Groups:               None
+Individual Configs:   None
+
+NetworkName:    HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #3
+Dhcpd IP:       192.168.59.11
+LowerIPAddress: 192.168.59.100
+UpperIPAddress: 192.168.59.254
+NetworkMask:    255.255.255.0
+Enabled:        Yes
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+Groups:               None
+Individual Configs:   None
+}
+I0522 18:48:25.576606   20544 main.go:141] libmachine: STDERR:
+{
+}
+I0522 18:48:25.576606   20544 main.go:141] libmachine: Windows might ask for the permission to configure a dhcp server. Sometimes, such confirmation window is minimized in the taskbar.
+I0522 18:48:25.576606   20544 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe dhcpserver modify --netname HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #3 --ip 192.168.59.7 --netmask 255.255.255.0 --lowerip 192.168.59.100 --upperip 192.168.59.254 --enable
+I0522 18:48:25.670694   20544 main.go:141] libmachine: STDOUT:
+{
+}
+I0522 18:48:25.670694   20544 main.go:141] libmachine: STDERR:
+{
+}
+I0522 18:48:25.670694   20544 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe modifyvm minikube --nic2 hostonly --nictype2 virtio --nicpromisc2 deny --hostonlyadapter2 VirtualBox Host-Only Ethernet Adapter #3 --cableconnected2 on
+I0522 18:48:25.765320   20544 main.go:141] libmachine: STDOUT:
+{
+}
+I0522 18:48:25.765320   20544 main.go:141] libmachine: STDERR:
+{
+}
+I0522 18:48:25.765829   20544 fix.go:57] fixHost completed within 1.2564537s
+I0522 18:48:25.765829   20544 start.go:83] releasing machines lock for "minikube", held for 1.2574733s
+W0522 18:48:25.765829   20544 out.go:239] 😿  Failed to start virtualbox VM. Running "minikube delete" may fix it: driver start: listen tcp4 127.0.0.1:50478: bind: An attempt was made to access a socket in a way forbidden by its access permissions.
+I0522 18:48:25.768516   20544 out.go:177] 
+W0522 18:48:25.770082   20544 out.go:239] ❌  Exiting due to GUEST_PROVISION: error provisioning guest: Failed to start host: driver start: listen tcp4 127.0.0.1:50478: bind: An attempt was made to access a socket in a way forbidden by its access permissions.
+W0522 18:48:25.770082   20544 out.go:239] 
+W0522 18:48:25.771154   20544 out.go:239] [31m╭───────────────────────────────────────────────────────────────────────────────────────────╮[0m
+[31m│[0m                                                                                           [31m│[0m
+[31m│[0m    😿  If the above advice does not help, please let us know:                             [31m│[0m
+[31m│[0m    👉  https://github.com/kubernetes/minikube/issues/new/choose                           [31m│[0m
+[31m│[0m                                                                                           [31m│[0m
+[31m│[0m    Please run `minikube logs --file=logs.txt` and attach logs.txt to the GitHub issue.    [31m│[0m
+[31m│[0m                                                                                           [31m│[0m
+[31m╰───────────────────────────────────────────────────────────────────────────────────────────╯[0m
+I0522 18:48:25.796338   20544 out.go:177] 
+
+
