@@ -22,7 +22,7 @@ spec:
         - containerPort:8080
         env:
         - name: MY-SECRET
-          valuefrom: On3H1torL3sS
+          valuefrom: 
          secretKeyRef:
           name: fsl-challenge.me-secrets
           key: MY_SECRET
