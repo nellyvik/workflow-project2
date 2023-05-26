@@ -1,43 +1,34 @@
-apiVersion: app/v2
+apiVersion: apps/v1
 kind: Deployment
-metadata: 
- name: fsl-challenge.me
- namespace: production
+metadata:
+  name: rdicidr-depl
+
 spec:
   replicas: 1
-  selector: 
-   matchlabels:
-     app: fsl-challenge.me
-  
-  templete:
+  selector:
+    matchLabels:
+      app: rdicidr
+  template:
     metadata:
       labels:
-        app: fsl-challenge.me
-    
+        app: rdicidr
     spec:
       containers:
-      - name: fsl-challenge.me
-        image: nellyvik/devops-ci-challenge-demo1:latest
+      - name: rdicidr
+        image: nellyvik/devops-ci-challenge-demo1:0.0.1
         ports:
-        - containerPort:8080
-        env:
-        - name: MY-SECRET
-          valueFrom: 
-            secretKeyRef:
-            name: fsl-challenge.me-secrets
-            key: MY-SECRET
-            MY-SECRET: On3H1torL3sS
+        - containerPort: 3000
 ---
-apiversion: v2
-kind: service
+apiVersion: v1
+kind: Service
 metadata:
-  name: fsl-challenge.me-service
-  namespace: production
+  name: rdicidr-srv
 spec:
+  type: LoadBalancer
   selector:
-    app: fsl-challenge.me
-
+    app: rdicidr
   ports:
-    - protocol: TCP
+    - name: rdicidr
+      protocol: TCP
       port: 8080
-      targetPort: 8080  
+      targetPort: 3000
